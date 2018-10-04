@@ -382,8 +382,9 @@ static void USB_task(void *pvParameters) {
 			USB_send( (uint8_t *) statusstr, 47);
 		} else {
 			xQueueSendToBack(iQueue, (void*) &i , portMAX_DELAY);
-			USB_send( (uint8_t *) okstr, 3);
 		}
+
+		USB_send( (uint8_t *) okstr, 3);
 
 		Board_LED_Set(1, LedState);
 		LedState = (bool) !LedState;
