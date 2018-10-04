@@ -1,0 +1,4 @@
+language: cpp
+compiler: gcc
+before_script: cd workspace/usb_mdraw/test
+script: make test
