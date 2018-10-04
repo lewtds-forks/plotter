@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/lewtds-forks/plotter.svg?branch=master)](https://travis-ci.com/lewtds-forks/plotter)
+
 # XY-Plotter Project
 
 Trung Ngo and Sam Abney
