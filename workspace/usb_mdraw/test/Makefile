@@ -7,7 +7,7 @@ all: test_instructions
 test: test_instructions
 	./test_instructions
 
-test1: test_instructions.cc ../src/instruction.cc
+test_instructions: test_instructions.cc ../src/instruction.cc
 
 clean:
 	rm -rf test_instructions
