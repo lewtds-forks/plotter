@@ -77,8 +77,6 @@ void assertParseWholeFile(string filepath) {
 			break;
 		}
 
-		buffer << '\r';
-
 		assert(line.compare(buffer.str()) == 0);
 
 		line.erase();
