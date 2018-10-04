@@ -1,4 +1,16 @@
 language: cpp
 compiler: gcc
+# Add support for C++11
+matrix:
+  include:
+    - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-7
+      env:
+        - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
 before_script: cd workspace/usb_mdraw/test
 script: make test
